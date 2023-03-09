@@ -3,9 +3,13 @@
 
 const priceForKm = 0.21;
 
+const titolo = document.querySelector(".titolo");
+
 // METTO LA PAGINA IN ASCOLTO DEL "CLICK" SUL BOTTONE
 const buttonInput = document.querySelector(".submit-button");
 buttonInput.addEventListener("click", function () {
+  // CHIEDO ALL'UTENTE COME SI CHIAMA?
+  const nameSurnameInput = document.querySelector(".name-input").value;
   // RECUPERO I CHILOMETRI PERCORSI 0DALL'UTENTE E LA SUA ETA'
   const kilometresInput = parseInt(
     document.querySelector(".kilometres-input").value
@@ -28,4 +32,9 @@ buttonInput.addEventListener("click", function () {
 
   const finalPrice = totalPrice - totalPrice * (discount / 100);
   console.log(finalPrice.toFixed(2));
+  document.querySelector(
+    ".result"
+  ).innerHTML = `Ciao ${nameSurnameInput} il costo del tuo biglietto è €${finalPrice.toFixed(
+    2
+  )}`;
 });

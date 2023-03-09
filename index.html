@@ -17,28 +17,47 @@
     />
   </head>
 
-  <body>
+  <body class="ms_bgc">
+    <div class="ms_title">
+      <h1>Lino-Il-Trenino</h1>
+    </div>
+    <div class="ms_title my-4">
+      <h3>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
+    </div>
     <!-- GENERO DUE IMPUT -->
+    <section>
+      <div class="d-flex box justify-content-around">
+        <div>
+          <div>Come ti chiami?</div>
+          <input class="name-input" type="text" placeholder="nome e cognome" />
+        </div>
 
-    <div>
-      <span>Quanti chilometri vuoi percorrere?</span>
-      <input
-        class="kilometres-input"
-        type="number"
-        placeholder="Inserisci i chilometri"
-      />
-    </div>
+        <div>
+          <div>Quanti chilometri vuoi percorrere?</div>
+          <input
+            class="kilometres-input"
+            type="number"
+            placeholder="Inserisci i chilometri"
+          />
+        </div>
 
-    <div>
-      <span>Quanti anni hai?</span>
-      <input
-        class="age-input"
-        type="number"
-        placeholder="Inserisci la tua età"
-      />
-    </div>
+        <div>
+          <div>Quanti anni hai?</div>
+          <input
+            class="age-input"
+            type="number"
+            placeholder="Inserisci la tua età"
+          />
+        </div>
 
-    <button type="button" class="submit-button btn btn-primary">Invia</button>
+        <h1 class="titolo"></h1>
+      </div>
+
+      <button type="button" class="submit-button btn btn-primary">Invia</button>
+    </section>
+    <section>
+      <h1 class="result"></h1>
+    </section>
 
     <script src="js/script.js"></script>
   </body>

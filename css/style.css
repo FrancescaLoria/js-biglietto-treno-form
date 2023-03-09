@@ -1,0 +1,17 @@
+.ms_bgc {
+  background-color: rgb(185, 108, 185);
+}
+
+/* COMMON */
+.ms_title {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgb(225, 161, 225);
+  text-align: center;
+}
+
+.box {
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightgrey;
+}
