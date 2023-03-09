@@ -3,8 +3,6 @@
 
 const priceForKm = 0.21;
 
-const titolo = document.querySelector(".titolo");
-
 // METTO LA PAGINA IN ASCOLTO DEL "CLICK" SUL BOTTONE
 const buttonInput = document.querySelector(".submit-button");
 buttonInput.addEventListener("click", function () {
